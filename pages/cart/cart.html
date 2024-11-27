@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="w-[1000px] m-auto h-[50px]">
+            <nav class="text-3xl text-center">
+                <a href="../../index.html">Home</a>
+                <a href="../photo/photo.html" class="ml-5">Photo</a>
+                <a href="../todos/todos.html" class="ml-5">Todos</a>
+                <a href="../user/user.html" class="ml-5">User</a>
+                <a href="#" class="ml-5">Корзина</a>
+            </nav>
+        </div>
+    </header>
+    <h1 class="text-4xl text-center font-semibold">Корзина</h1>
+    <div id="cart" class="mt-[50px]"></div>
+    <script src="./cart.js"></script>
+</body>
+
+</html>
